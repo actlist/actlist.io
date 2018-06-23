@@ -1,0 +1,16 @@
+- title: Plugin Development Guide
+  docs:
+  - quick-start
+  - plugin-name
+  - warning-text
+  - update-check
+  - minimum-compatible-version
+  - about-dialog
+  - logo-image
+  - context-menu
+  - graphic-design
+  - loading-bar
+  - message-box
+  - config-file
+  - exception
+  - export-and-launch
