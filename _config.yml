@@ -1,0 +1,76 @@
+# Site settings
+title: Actlist
+#email: your-email@domain.com
+description: >
+  Easy and simply execute your own act list
+
+logo: /img/og-img-1200x630.png
+#also head.html has too.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://actlist.silentsoft.org
+#url: http://actlist.silentsoft.org # the base hostname & protocol for your site
+git_address: https://github.com/silentsoft/actlist
+#git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: paper
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - _posts # this will be ignore the whole posts
+  - allposts.html # this will be ignored
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - actlist.silentsoft.org.iml
+  - .gitignore
+  - README.md
+
+timezone: Asia/Seoul
+
+collections:
+  archives:
+    output: true
+  docs:
+    permalink: /:collection/:path/
+    output: true
+#  posts:
+#    permalink: /blog/:year/:month/:day/:title/
+#    output: true
+
+defaults:
+  - scope:
+      path: _archives
+      type: archives
+    values:
+      layout: archives
+      sectionid: archives
+# - scope:
+#    path: _posts
+#    type: posts
+#  values:
+#    layout: post
+#    sectionid: blog
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs
+      seo:
+        type: "WebPage"
+  - scope:
+      path: "410.html"
+    values:
+      sitemap: false
