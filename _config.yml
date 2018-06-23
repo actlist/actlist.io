@@ -39,6 +39,8 @@ exclude:
 
 timezone: Asia/Seoul
 
+google_site_verification: L-7RmNNelAFzLK3MPycWRN0o7Q9DxceTOVJFOCD22kg
+
 collections:
   archives:
     output: true
