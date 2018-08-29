@@ -1,3 +1,26 @@
+- version: 1.2.8
+  date: 30 Aug 2018
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.2.8-windows-x64.zip
+  - Actlist-1.2.8-windows-x64.exe
+  - Actlist-1.2.8-windows-x86.zip
+  - Actlist-1.2.8-windows-x86.exe
+  - Actlist-1.2.8-macosx-x64.dmg
+  changes:
+  - update check request will be executed every 24 hours.
+  - minor UX improvements
+    <ul>
+      <li>orange dot and red dot will have animation</li>
+      <li>the tabs on plugin's about dialog are displayed dynamically.</li>
+    </ul>
+  - minor bugfix
+    <ul>
+      <li>getConfig() / putConfig() on debug mode</li>
+    </ul>
+
 - version: 1.2.7
   date: 02 May 2018
   supports:
