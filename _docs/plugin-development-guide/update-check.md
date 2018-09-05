@@ -17,9 +17,11 @@ permalink: /docs/update-check/
 
   the Actlist will requests to your server with `version` parameter via `GET` method when Actlist is instanced up at first time.
 
-  you can response one or two parameters to the Actlist's update check request.
-    * `available` : true or false
-    * (optional) `url` : the plugin's archives url.
+  you can response with below parameters to the Actlist's update check request.
+    * `available` : `true` or `false`. this will notices to user that your plugin has available updates or not.
+      * `url` : the plugin's archives url.
+    * `killSwitch` : `on` or `off`. this will makes the plugin to unavailable.
+    * `endOfService` : `true` or `false`. this will notices to user that your plugin has reached end-of-service or not.
 
   there are two ways to browse the archives.
     * the first is browse by your server with `setPluginUpdateCheckURI(URI)` method and `url` response value.
