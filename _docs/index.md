@@ -19,7 +19,7 @@ To create an Actlist plugin, you need to do some of the following:
   <dependency>
       <groupId>org.silentsoft</groupId>
       <artifactId>actlist-plugin</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
   </dependency>
   ```
 * Generate executable main class called `Plugin` where in default package (please do not assign package).
