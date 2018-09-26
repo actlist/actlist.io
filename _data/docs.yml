@@ -12,5 +12,6 @@
   - loading-bar
   - message-box
   - config-file
+  - one-time-plugin
   - exception
   - export-and-launch

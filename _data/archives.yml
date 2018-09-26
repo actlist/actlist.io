@@ -1,3 +1,23 @@
+- version: 1.2.10
+  date: 26 Sep 2018
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.2.10-windows-x64.zip
+  - Actlist-1.2.10-windows-x64.exe
+  - Actlist-1.2.10-windows-x86.zip
+  - Actlist-1.2.10-windows-x86.exe
+  - Actlist-1.2.10-macosx-x64.dmg
+  changes:
+  - new features
+    <ul>
+      <li>supports one-time plugin which deactivates immediately after activated</li>
+      <li>supports plugin's update check through .js file</li>
+      <li>Actlist showing/hiding feature</li>
+    </ul>
+  - minor bugfix
+
 - version: 1.2.9
   date: 06 Sep 2018
   supports:
@@ -12,8 +32,8 @@
   changes:
   - new features
     <ul>
-    <li>plugin's kill switch</li>
-    <li>plugin's end of service</li>
+      <li>plugin's kill switch</li>
+      <li>plugin's end of service</li>
     </ul>
   - minor bugfix
 
