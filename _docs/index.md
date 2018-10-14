@@ -7,19 +7,20 @@ redirect_from: /docs/index.html
 ## Development setup
 
 To create an Actlist plugin, you need to do some of the following:
-* Clone projects as following command or clone via GUI or download project and import into workspace.
-  ```
-  git clone https://github.com/silentsoft/silentsoft-io.git
-  git clone https://github.com/silentsoft/silentsoft-core.git
-  git clone https://github.com/silentsoft/actlist-plugin.git
-  ```
 * Create a new Java project and configure to Maven project.
-* Add dependency as like below:
+* Add maven repository
+  ```
+  <repository>
+      <id>silentsoft-repository</id>
+      <url>http://nexus.silentsoft.org/repository/maven-releases</url>
+  </repository>
+  ```
+* Add dependency
   ```
   <dependency>
       <groupId>org.silentsoft</groupId>
       <artifactId>actlist-plugin</artifactId>
-      <version>1.0.1</version>
+      <version>1.3.0</version>
   </dependency>
   ```
 * Generate executable main class called `Plugin` where in default package (please do not assign package).
