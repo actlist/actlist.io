@@ -4,7 +4,10 @@ permalink: /docs/quick-start/
 redirect_from: /docs/index.html
 ---
 
-## Development setup
+#### Language Requirements
+* Java 1.8 (with JavaFx)
+
+#### Development setup
 
 To create an Actlist plugin, you need to do some of the following:
 * Create a new Java project and configure to Maven project.
