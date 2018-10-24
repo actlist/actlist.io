@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html>
-{% include head.html %}
-<body>
-    {% include topnav.html %}
-    <div class="container">{% for archive in site.data.archives %}
-        <div class="col-md-4 col-sm-4 col-xs-4" style="text-align: right;">
-            <h4>v{{archive.version}}</h4>
-            <h6>{{archive.date}}</h6>
-            <p>{% for support in archive.supports %}{% if support == 'windows' %}
-                <i class="fa fa-windows"></i>{% elsif support == 'macosx' %}
-                <i class="fa fa-apple"></i>{% endif %}{% endfor %}
-            </p>
-        </div>
-        <div class="col-md-8 col-sm-8 col-xs-8" style="border-left-style: solid; border-left-color: #ecebeb; border-left-width: 1px; border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
-            <h4>Files</h4>
-            <ul>{% for file in archive.files %}
-                <li><a href="/archives/{{file}}">{{file}}</a></li>{% endfor %}
-            </ul>
-            <h4>Changes</h4>
-            <ul>{% for change in archive.changes %}
-                <li>{{change}}</li>{% endfor %}
-            </ul>
-        </div>{% endfor %}
+---
+layout: default
+---
+
+<div class="container">{% for archive in site.data.archives %}
+    <div class="col-md-4 col-sm-4 col-xs-4" style="text-align: right;">
+        <h4>v{{archive.version}}</h4>
+        <h6>{{archive.date}}</h6>
+        <p>{% for support in archive.supports %}{% if support == 'windows' %}
+            <i class="fa fa-windows"></i>{% elsif support == 'macosx' %}
+            <i class="fa fa-apple"></i>{% endif %}{% endfor %}
+        </p>
     </div>
-    {% include footer.html %}
-    {% include js_files.html %}
-</body>
-</html>
+    <div class="col-md-8 col-sm-8 col-xs-8" style="border-left-style: solid; border-left-color: #ecebeb; border-left-width: 1px; border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
+        <h4>Files</h4>
+        <ul>{% for file in archive.files %}
+            <li><a href="/archives/{{file}}">{{file}}</a></li>{% endfor %}
+        </ul>
+        <h4>Changes</h4>
+        <ul>{% for change in archive.changes %}
+            <li>{{change}}</li>{% endfor %}
+        </ul>
+    </div>{% endfor %}
+</div>
