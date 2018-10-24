@@ -27,8 +27,6 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - _posts # this will be ignore the whole posts
-  - allposts.html # this will be ignored
   - LICENSE
   - Gemfile
   - Gemfile.lock
@@ -42,36 +40,36 @@ timezone: Asia/Seoul
 google_site_verification: L-7RmNNelAFzLK3MPycWRN0o7Q9DxceTOVJFOCD22kg
 
 collections:
-  archives:
-    output: true
   docs:
     permalink: /:collection/:path/
     output: true
-#  posts:
-#    permalink: /blog/:year/:month/:day/:title/
-#    output: true
+  plugins:
+    permalink: /:collection/:path/
+    output: true
+  archives:
+    output: true
 
 defaults:
-  - scope:
-      path: _archives
-      type: archives
-    values:
-      layout: archives
-      sectionid: archives
-# - scope:
-#    path: _posts
-#    type: posts
-#  values:
-#    layout: post
-#    sectionid: blog
   - scope:
       path: _docs
       type: docs
     values:
       layout: docs
       sectionid: docs
-      seo:
-        type: "WebPage"
+    seo:
+      type: "WebPage"
+  - scope:
+      path: _plugins
+      type: plugins
+    values:
+      layout: plugins
+      sectionid: plugins
+  - scope:
+      path: _archives
+      type: archives
+    values:
+      layout: archives
+      sectionid: archives
   - scope:
       path: "410.html"
     values:
