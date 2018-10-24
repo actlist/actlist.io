@@ -11,7 +11,6 @@ $(function() {
 
         prefetch: baseurl + '/search.json'
     });
-
     $('#search-box').typeahead({
         minLength: 0,
         highlight: true
@@ -19,6 +18,21 @@ $(function() {
         name: 'pages',
         display: 'title',
         source: pages
+    });
+
+    var tags = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tags'),
+        // datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+
+        prefetch: baseurl + '/search.json'
+    });
+    $('#search-box').typeahead({
+        minLength: 0
+    }, {
+        name: 'tags',
+        display: 'title',
+        source: tags
     });
 
     $('#search-box').bind('typeahead:select', function(ev, suggestion) {
