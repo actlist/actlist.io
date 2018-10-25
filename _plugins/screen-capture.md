@@ -1,5 +1,4 @@
 ---
-layout: plugin
 title: Screen Capture
 excerpt: Don't waste time to make a screen capture and paste it to clipboard. Just activate this plugin ! Stop opening a capture utility and Paint tool to do this anymore. Time is Gold !
 date: 2018-10-24

@@ -1,5 +1,4 @@
 ---
-layout: plugin
 title: Custom Logon Background
 excerpt: Custom Logon Background for Windows 7. Drag and drop the beautiful image file onto this plugin for changing logon background.
 date: 2018-10-23

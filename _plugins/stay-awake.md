@@ -1,5 +1,4 @@
 ---
-layout: plugin
 title: Stay Awake
 excerpt: When Stay Awake is activated, your computer will not enter sleep mode. Stay Awake will always be with you !
 date: 2018-10-25

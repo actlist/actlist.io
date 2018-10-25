@@ -62,7 +62,7 @@ defaults:
       path: _plugins
       type: plugins
     values:
-      layout: plugins
+      layout: plugin
       sectionid: plugins
   - scope:
       path: _archives
