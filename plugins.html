@@ -8,11 +8,12 @@ sectionid: plugins
     <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-11 col-xs-offset-1">
         {% include plugins_nav.html %}
     </div>
-    <div class="col-md-8 col-md-offset-0 col-sm-7 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-        {% assign plugins = site.plugins | sort: 'date' | reverse %}
+    <div class="visible-xs col-xs-12 col-xs-offset-0"><hr/></div>
+    <div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+        {% assign plugins = site.plugins | sort: "date" | reverse %}
         {% for plugin in plugins %}
         <div class="row" style="border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
-            <div class="col-md-10 col-sm-9 col-xs-8">
+            <div class="col-md-10 col-sm-10 col-xs-10">
                 <h5><strong><a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a></strong></h5>
                 <p>
                     {% if plugin.excerpt %}
@@ -23,19 +24,20 @@ sectionid: plugins
                     {% endif %}
                     {% endif %}
                 </p>
-                <span>{% if plugin.author %}by {{ plugin.author }}{% endif %}</span>
-                <span>{% if plugin.license_text %} / {{ plugin.license_text }}{% endif %}</span>
+                <span>{% if plugin.author %}<i class="fa fa-user"></i> {{ plugin.author }}{% endif %}</span>
+                <span>{% if plugin.license_text %}<i class="fa fa-balance-scale" style="padding-left: 5px;"></i> {{ plugin.license_text }}{% endif %}</span>
                 <br/>
                 {% for tag in plugin.tags %}
                 <code class="highlighter-rouge"><i>{{ tag | prepend: "#" }}</i></code>
                 {% endfor %}
                 <p/>
             </div>
-            <div class="col-md-2 col-sm-3 col-xs-4">
+            <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if plugin.download.size > 4 %}
                 {% assign extension = plugin.download | slice: -4,4 | downcase %}
                 {% if extension == ".jar" %}
-                <h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button">Download</a></h5>
+                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button">Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="btn btn-primary btn-xs" href="{{ plugin.download | prepend: site.baseurl }}" role="button">Download</a></h5></div>
                 {% endif %}
                 {% endif %}
             </div>
