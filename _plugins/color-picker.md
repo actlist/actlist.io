@@ -1,5 +1,4 @@
 ---
-layout: plugin
 title: Color Picker
 excerpt: Hover your mouse cursor to find out what the color is.
 date: 2018-10-26
