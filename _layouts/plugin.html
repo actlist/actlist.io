@@ -3,39 +3,49 @@ layout: default
 ---
 
 <div class="container">
-    <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+    <div class="col-md-4 col-sm-4 hidden-xs">
         {% include plugins_nav.html %}
     </div>
-    <div class="visible-xs col-xs-12 col-xs-offset-0"><hr/></div>
-    <div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+    <div class="col-md-8 col-sm-8 col-xs-12">
         <div class="row" style="border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
             <div class="col-md-10 col-sm-10 col-xs-10">
                 <h5><strong>{{ page.title }}</strong></h5>
-                <p>
-                    <span>{% if page.content %}{{ page.content }}{% endif %}</span>
-                </p>
                 <span>{% if page.author %}<i class="fa fa-user"></i> {{ page.author }}{% endif %}</span>
-                <span>{% if page.license_text %}<i class="fa fa-balance-scale" style="padding-left: 5px;"></i> {{ page.license_text }}{% endif %}</span>
+                <span>{% if page.homepage %}<i class="fa fa-home" style="padding-left: 5px;"></i><a href="{{ page.homepage | prepend: site.baseurl }}"> Homepage</a>{% endif %}</span>
+                <span>
+                    {% if page.license_text %}
+                    <i class="fa fa-balance-scale" style="padding-left: 5px;"></i>
+                        {% if page.license_link %}
+                        <a href="{{ page.license_link | prepend: site.baseurl }}"> {{ page.license_text }}</a>
+                        {% else %}
+                        {{ page.license_text }}
+                        {% endif %}
+                    {% endif %}
+                </span>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                {% if page.download.size > 4 %}
+                {% assign extension = page.download | slice: -4,4 | downcase %}
+                {% if extension == ".jar" %}
+                <div class="visible-xs"><h5><a href="{{ page.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ page.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                {% endif %}
+                {% endif %}
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <hr style="margin-top: 7px;"/>
+                <p>
+                    <span>{{ page.content }}</span>
+                </p>
                 <br/>
                 {% for tag in page.tags %}
                 <code class="highlighter-rouge"><i>{{ tag | prepend: "#" }}</i></code>
                 {% endfor %}
                 <p/>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-2" style="display: inline-grid;">
-                {% if page.download.size > 4 %}
-                {% assign extension = page.download | slice: -4,4 | downcase %}
-                {% if extension == ".jar" %}
-                <a class="btn btn-primary btn-sm" href="{{ page.download | prepend: site.baseurl }}" role="button">Download</a><br/>
-                {% endif %}
-                {% endif %}
-                {% if page.license_link %}
-                <a class="btn btn-sm" href="{{ page.license_link | prepend: site.baseurl }}" role="button">License</a><br/>
-                {% endif %}
-                {% if page.homepage %}
-                <a class="btn btn-sm" href="{{ page.homepage | prepend: site.baseurl }}" role="button">Homepage</a><br/>
-                {% endif %}
-            </div>
         </div>
+    </div>
+    <div class="visible-xs col-xs-11 col-xs-offset-1">
+        {% include plugins_nav.html %}
     </div>
 </div>
