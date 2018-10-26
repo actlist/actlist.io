@@ -10,6 +10,6 @@ license_link: https://github.com/silentsoft/actlist-plugin-color-picker/blob/mas
 tags: [color, picker, chooser]
 ---
 
-![](http://actlist.silentsoft.org/img/preview.png)
+![](http://actlist.silentsoft.org/img/preview.png){:class="img-responsive"}
 
 Hover your mouse cursor to find out what the color is.
