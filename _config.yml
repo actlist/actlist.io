@@ -36,6 +36,7 @@ exclude:
   - README.md
 
 timezone: Asia/Seoul
+future: true
 
 google_site_verification: L-7RmNNelAFzLK3MPycWRN0o7Q9DxceTOVJFOCD22kg
 
