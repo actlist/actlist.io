@@ -10,18 +10,6 @@ layout: default
         <div class="row" style="border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
             <div class="col-md-10 col-sm-10 col-xs-10">
                 <h5><strong>{{ page.title }}</strong></h5>
-                <span>{% if page.author %}<i class="fa fa-user"></i> {{ page.author }}{% endif %}</span>
-                <span>{% if page.homepage %}<i class="fa fa-home" style="padding-left: 5px;"></i><a href="{{ page.homepage | prepend: site.baseurl }}"> Homepage</a>{% endif %}</span>
-                <span>
-                    {% if page.license_text %}
-                    <i class="fa fa-balance-scale" style="padding-left: 5px;"></i>
-                        {% if page.license_link %}
-                        <a href="{{ page.license_link | prepend: site.baseurl }}"> {{ page.license_text }}</a>
-                        {% else %}
-                        {{ page.license_text }}
-                        {% endif %}
-                    {% endif %}
-                </span>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if page.download.size > 4 %}
@@ -32,11 +20,28 @@ layout: default
                 {% endif %}
                 {% endif %}
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <hr style="margin-top: 7px;"/>
-                <p>
-                    <span>{{ page.content }}</span>
-                </p>
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: -5px;">
+                <div>
+                    <span>{% if page.author %}<i class="fa fa-user"></i> {{ page.author }}{% endif %}</span>
+                    <span>{% if page.homepage %}<i class="fa fa-home" style="padding-left: 5px;"></i><a href="{{ page.homepage | prepend: site.baseurl }}"> Homepage</a>{% endif %}</span>
+                    <span>
+                        {% if page.license_text %}
+                        <i class="fa fa-balance-scale" style="padding-left: 5px;"></i>
+                            {% if page.license_link %}
+                            <a href="{{ page.license_link | prepend: site.baseurl }}"> {{ page.license_text }}</a>
+                            {% else %}
+                            {{ page.license_text }}
+                            {% endif %}
+                        {% endif %}
+                    </span>
+                </div>
+                <hr style="margin-top: 7px; margin-bottom: 7px;"/>
+                <div>
+                    {% if page.version %}<img src="https://img.shields.io/badge/version-v{{ page.version }}-brightgreen.svg"/>{% endif %}
+                    {% if page.actlist_require %}<img src="https://img.shields.io/badge/actlist@require-v{{ page.actlist_require }}-orange.svg"/>{% endif %}
+                </div>
+                <br/>
+                <span>{{ page.content }}</span>
                 <br/>
                 {% for tag in page.tags %}
                 <code class="highlighter-rouge"><i>{{ tag | prepend: "#" }}</i></code>

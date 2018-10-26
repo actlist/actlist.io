@@ -5,6 +5,8 @@ date: 1010-10-10
 author: John Doe
 homepage: 
 download: 
+version: 
+actlist_require: 
 license_text: MIT License
 license_link: 
 tags: [lorem, ipsum, dolor, sit, amet]
