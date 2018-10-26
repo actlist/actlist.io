@@ -36,8 +36,8 @@ permalink: /plugins/
                 {% if plugin.download.size > 4 %}
                 {% assign extension = plugin.download | slice: -4,4 | downcase %}
                 {% if extension == ".jar" %}
-                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button">Download</a></h5></div>
-                <div class="visible-xs"><h5><a class="btn btn-primary btn-xs" href="{{ plugin.download | prepend: site.baseurl }}" role="button">Download</a></h5></div>
+                <div class="visible-xs"><h5><a href="{{ plugin.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
                 {% endif %}
             </div>
