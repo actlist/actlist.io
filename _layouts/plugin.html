@@ -39,8 +39,8 @@ layout: default
                 </div>
                 <hr style="margin-top: 7px; margin-bottom: 7px;"/>
                 <div>
-                    {% if page.version %}<img src="https://img.shields.io/badge/version-v{{ page.version }}-brightgreen.svg"/>{% endif %}
-                    {% if page.actlist_require %}<img src="https://img.shields.io/badge/actlist@require-v{{ page.actlist_require }}-orange.svg"/>{% endif %}
+                    {% if page.version %}<img src="https://img.shields.io/badge/version-{{ page.version | replace: ' ', '%20' | replace: '-', '--' | replace: '_', '__' }}-brightgreen.svg"/>{% endif %}
+                    {% if page.actlist_require %}<img src="https://img.shields.io/badge/actlist@require-{{ page.actlist_require | replace: ' ', '%20' | replace: '-', '--' | replace: '_', '__' }}-orange.svg"/>{% endif %}
                 </div>
                 <br/>
                 <span>{{ page.content }}</span>
