@@ -43,7 +43,7 @@ layout: default
                     {% if page.actlist_require %}<img src="https://img.shields.io/badge/actlist@require-{{ page.actlist_require | replace: ' ', '%20' | replace: '-', '--' | replace: '_', '__' }}-orange.svg"/>{% endif %}
                 </div>
                 <br/>
-                <span>{{ page.content }}</span>
+                <div id="markdown-content-container">{{ content }}</div>
                 <br/>
                 {% for tag in page.tags %}
                 <code class="highlighter-rouge"><i>{{ tag | prepend: "#" }}</i></code>

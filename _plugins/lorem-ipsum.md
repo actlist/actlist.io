@@ -12,7 +12,7 @@ license_link:
 tags: [lorem, ipsum, dolor, sit, amet]
 ---
 
-![](http://actlist.silentsoft.org/img/bg.jpg){:class="img-responsive"}
+![](http://actlist.silentsoft.org/img/bg.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu risus quis varius quam. Integer vitae justo eget magna fermentum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Cras fermentum odio eu feugiat pretium nibh. A erat nam at lectus urna. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Donec ultrices tincidunt arcu non sodales neque. Iaculis at erat pellentesque adipiscing commodo elit. Aliquam ultrices sagittis orci a scelerisque purus semper. Quam lacus suspendisse faucibus interdum. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Convallis a cras semper auctor neque vitae. Tristique senectus et netus et malesuada fames ac turpis. Tortor consequat id porta nibh.
 
