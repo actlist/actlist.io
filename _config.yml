@@ -15,7 +15,8 @@ git_edit_address: https://github.com/silentsoft/actlist.silentsoft.org/blob/mast
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: paper
+#bootwatch: paper
+bootwatch: actlist
 
 # Build settings
 markdown: kramdown
