@@ -1,6 +1,6 @@
-# Jekyll Doc Theme
+# actlist.silentsoft.org
 
-Go to [the website](https://aksakalli.github.io/jekyll-doc-theme/) for detailed information and demo.
+[This website](https://actlist.silentsoft.org) has been created with Jekyll and [jekyll-doc-theme](https://aksakalli.github.io/jekyll-doc-theme/)
 
 ## Running locally
 
@@ -11,12 +11,16 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/aksakalli/jekyll-doc-theme.git
-cd jekyll-doc-theme
+git clone https://github.com/silentsoft/actlist.silentsoft.org
+cd actlist.silentsoft.org
 
 # run jekyll with dependencies
 bundle exec jekyll serve
 ```
+
+## Adding plugins
+
+Create your own markdown post under the `_plugins` directory
 
 ## License
 
