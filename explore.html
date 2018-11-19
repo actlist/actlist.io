@@ -1,0 +1,46 @@
+---
+layout: inapp
+title: Explore
+permalink: /explore/
+---
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        {% assign plugins = site.plugins | sort: "date" | reverse %}
+        {% for plugin in plugins %}
+        <div class="row" style="border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <h5><strong><a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a></strong></h5>
+                <p>
+                    {% if plugin.excerpt %}
+                    {% if plugin.excerpt.size >= 200 %}
+                    <span>{{ plugin.excerpt | slice: 0,200 }}</span><a href="{{ plugin.url | prepend: site.baseurl }}"> ...more</a>
+                    {% else %}
+                    <span>{{ plugin.excerpt }}</span>
+                    {% endif %}
+                    {% endif %}
+                </p>
+                <span>{% if plugin.author %}<i class="fa fa-user"></i> {{ plugin.author }}{% endif %}</span>
+                <span>{% if plugin.license_text %}<i class="fa fa-balance-scale" style="padding-left: 5px;"></i> {{ plugin.license_text }}{% endif %}</span>
+                <br/>
+                {% for tag in plugin.tags %}
+                <code class="highlighter-rouge"><i>{{ tag | prepend: "#" }}</i></code>
+                {% endfor %}
+                <p/>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                {% if plugin.download and plugin.license_text and plugin.license_link %}
+                {% if plugin.download.size > 4 %}
+                {% assign extension = plugin.download | slice: -4,4 | downcase %}
+                {% if extension == ".jar" %}
+                <div class="visible-xs"><h5><a href="{{ plugin.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                {% endif %}
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <p/>
+        {% endfor %}
+    </div>
+</div>
