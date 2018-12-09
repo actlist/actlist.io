@@ -3,29 +3,58 @@ title: Export and launch
 permalink: /docs/export-and-launch/
 ---
 
-* (Only the first time) Plugin.java > Right click > `Run as Java Application`
-
-  ![]({{site.url}}/img/export-1.png)
-
-* Project > Right click > `Export`
-
-  ![]({{site.url}}/img/export-2.png)
-
-* Select `Runnable JAR file`
-
-  ![]({{site.url}}/img/export-3.png)
-
-* Select your project in `Launch configuration` combo box and define export destination via `Browse...` button then choose `Extract required libraries into generated JAR` option
-
-  ![]({{site.url}}/img/export-4.png)
-
-* Basically, the Actlist application contains all the libraries that required plugin things. So, you must to delete libraries within your jar file for reduce size of file. (This action will save about 7.2 MB and the jar file will be about 45 KB from 7.24 MB)
-* If you are not added any 3rd party libraries, then the inside of the jar file is like as below.
+* Make sure you have a maven build plugin settings in `pom.xml` as like below
   ```
-  META-INF/
-  Plugin.class
-  (optional) Plugin.fxml
-  (optional) Plugin.png
+  <build>
+      <plugins>
+          ...
+          <plugin>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <configuration>
+                  <archive>
+                      <manifest>
+                          <mainClass>Plugin</mainClass>
+                      </manifest>
+                  </archive>
+                  <descriptorRefs>
+                      <descriptorRef>jar-with-dependencies</descriptorRef>
+                  </descriptorRefs>
+              </configuration>
+              <executions>
+                  <execution>
+                      <id>make-assembly</id>
+                      <phase>package</phase>
+                      <goals>
+                          <goal>single</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+          ...
+      </plugins>
+  </build>
   ```
 
+* and `actlist-plugin` dependency scope muse be `provided`
+  ```
+  <dependencies>
+      ...
+      <dependency>
+          <groupId>org.silentsoft</groupId>
+          <artifactId>actlist-plugin</artifactId>
+          <version>1.3.0</version>
+          <scope>provided</scope>
+      </dependency>
+      ...
+  </dependencies>
+  ```
+
+* run maven command via CLI or GUI with `clean package` goals
+  ```
+  $ mvn clean package
+  ```
+
+* `project-name-verion-jar-with-dependencies.jar` file will be created under the `/target/` directory
+  
 * Finally, put the jar file into `/plugins/` directory that under the Actlist installed path and (re)start to Actlist.
+  or just drag and drop the jar file onto Actlist's main screen.
