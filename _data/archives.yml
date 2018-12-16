@@ -1,3 +1,17 @@
+- version: 1.4.1
+  date: 16 Dec 2018
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.4.1-windows-x64.zip
+  - Actlist-1.4.1-windows-x64.exe
+  - Actlist-1.4.1-windows-x86.zip
+  - Actlist-1.4.1-windows-x86.exe
+  - Actlist-1.4.1-macosx-x64.dmg
+  changes:
+  - minor bugfix
+
 - version: 1.4.0
   date: 14 Dec 2018
   supports:
