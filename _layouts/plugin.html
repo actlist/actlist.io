@@ -9,7 +9,10 @@ layout: default
     <div class="col-md-8 col-sm-8 col-xs-12">
         <div class="row" style="border-bottom-style: solid; border-bottom-color: #ecebeb; border-bottom-width: 1px;">
             <div class="col-md-10 col-sm-10 col-xs-10">
-                <h5><strong>{{ page.title }}</strong></h5>
+                <h5>
+                    <strong>{{ page.title }}</strong>
+                    {% if page.lock %}<span style="font-size: 0.8em; color: #4e4e4e;"><i class="fa fa-lock"></i></span>{% endif %}
+                </h5>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if page.download and page.license_text and page.license_link %}
