@@ -15,7 +15,7 @@ layout: default
                 </h5>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2">
-                {% if page.download and page.license_text and page.license_link %}
+                {% if page.download and page.license_text %}
                 <div class="visible-xs"><h5><a href="{{ page.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
                 <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ page.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
