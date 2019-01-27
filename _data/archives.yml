@@ -1,3 +1,34 @@
+- version: 1.4.2
+  date: 27 Jan 2019
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.4.2-windows-x64.zip
+  - Actlist-1.4.2-windows-x64.exe
+  - Actlist-1.4.2-windows-x86.zip
+  - Actlist-1.4.2-windows-x86.exe
+  - Actlist-1.4.2-macosx-x64.dmg
+  changes:
+  - new features
+    <ul>
+      <li>supports mainClass property on plugin's MANIFEST.MF</li>
+    </ul>
+  - improvements
+    <ul>
+      <li>fully supported debugging experience</li>
+      <li>UTF-8 console logging</li>
+    </ul>
+  - changes
+    <ul>
+      <li>Win theme UI/UX</li>
+      <li>default stage/root size</li>
+    </ul>
+  - bugfix
+    <ul>
+      <li>event bubbling on context menu</li>
+    </ul>
+
 - version: 1.4.1
   date: 16 Dec 2018
   supports:

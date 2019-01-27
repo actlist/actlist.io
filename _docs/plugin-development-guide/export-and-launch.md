@@ -3,8 +3,11 @@ title: Export and launch
 permalink: /docs/export-and-launch/
 ---
 
-* Make sure you have a below `repository`, `parent` and `dependency` in your `pom.xml`
+* Make sure you have a below `property`, `repository`, `parent` and `dependency` in your `pom.xml`
   ```
+  <properties>
+      <mainClass>your.pkg.Plugin</mainClass>
+  </properties>
   <repositories>
       <repository>
           <id>silentsoft-repository</id>
