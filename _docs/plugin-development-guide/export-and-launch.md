@@ -17,13 +17,13 @@ permalink: /docs/export-and-launch/
   <parent>
       <groupId>org.silentsoft</groupId>
       <artifactId>actlist-plugin-sdk</artifactId>
-      <version>1.0.0</version>
+      <version>2.0.0</version>
   </parent>
   <dependencies>
       <dependency>
           <groupId>org.silentsoft</groupId>
           <artifactId>actlist-plugin</artifactId>
-          <version>1.4.1</version>
+          <version>1.4.2</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>
