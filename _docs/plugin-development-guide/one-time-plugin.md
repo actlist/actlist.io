@@ -5,7 +5,7 @@ permalink: /docs/one-time-plugin/
 
 * If you want to build a one time plugin that deactivates the plugin when something is done,
   you can use `setOneTimePlugin(true);` method on plugin's constructor as like below
-  ```
+  ```java
   public Plugin() throws Exception {
       super("whatever you want");
       
@@ -20,7 +20,7 @@ permalink: /docs/one-time-plugin/
   
 
 * Here is an example source code
-  ```
+  ```java
   import org.silentsoft.actlist.plugin.ActlistPlugin;
   
   public class Plugin extends ActlistPlugin {

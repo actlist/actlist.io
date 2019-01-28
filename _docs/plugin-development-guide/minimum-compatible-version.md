@@ -3,7 +3,7 @@ title: Minimum compatible version
 permalink: /docs/minimum-compatible-version/
 ---
 
-  ```
+  ```java
   public Plugin() throws Exception {
       super("whatever you want");
 

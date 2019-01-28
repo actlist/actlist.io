@@ -6,7 +6,7 @@ permalink: /docs/message-box/
 * The Actlist has built in `MessageBox`.
 
   See the sample source code below:
-  ```
+  ```java
   Optional<ButtonType> result = MessageBox.showConfirm("Are you human?");
   result.ifPresent((buttonType) -> {
       if (buttonType == ButtonType.OK) {
