@@ -4,7 +4,7 @@ permalink: /docs/update-check/
 ---
 
 * Red dot will be appeared when updates found and if clicks, archives will be opened by default browser.
-  ```
+  ```java
   public Plugin() throws Exception {
       super("whatever you want");
 
@@ -40,7 +40,7 @@ permalink: /docs/update-check/
     * the second way is browse by your code with 2nd parameter of `setPluginUpdateCheckURI(URI, URI)` method.
 
   also you can override `pluginUpdateFound` method and set archivesURI dynamically:
-  ```
+  ```java
   @Override
   public void pluginUpdateFound() throws Exception {
       setPluginArchivesURI(URI.create("http://location-of-archives"));

@@ -4,7 +4,7 @@ permalink: /docs/context-menu/
 ---
 
 * With `putFunction` method at `initialize` method, you can add function (context menu)
-  ```
+  ```java
   @Override
   protected void initialize() throws Exception {
       putFunction("printHelloWorld", new TextFunction("Hello World", () -> {

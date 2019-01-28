@@ -4,7 +4,7 @@ permalink: /docs/warning-text/
 ---
 
 * The warning text will be appeared as orange dot and if clicks, MessageBox will be opened.
-  ```
+  ```java
   public Plugin() throws Exception {
       super("whatever you want");
 
