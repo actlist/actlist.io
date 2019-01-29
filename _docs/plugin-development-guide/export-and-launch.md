@@ -11,7 +11,7 @@ permalink: /docs/export-and-launch/
   <repositories>
       <repository>
           <id>silentsoft-repository</id>
-          <url>http://nexus.silentsoft.org/repository/maven-releases</url>
+          <url>http://nexus.silentsoft.org/repository/maven-public</url>
       </repository>
   </repositories>
   <parent>
