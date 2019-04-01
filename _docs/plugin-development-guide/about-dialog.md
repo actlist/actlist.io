@@ -9,7 +9,7 @@ permalink: /docs/about-dialog/
       super("whatever you want");
 
       setPluginVersion("1.0.0"); // this is essential for update check
-      setPluginUpdateCheckURI(URI.create("http://your-server.name"), URI.create("http://location-of-archives")); // e.g.
+      setPluginUpdateCheckURI(URI.create("http://your-server.name")); // e.g.
 
       // setPluginAuthor("silentsoft");
       setPluginAuthor("silentsoft", URI.create("http://silentsoft.org"));
