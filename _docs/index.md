@@ -39,7 +39,7 @@ redirect_from: /docs/index.html
           <dependency>
               <groupId>org.silentsoft</groupId>
               <artifactId>actlist-plugin</artifactId>
-              <version>1.4.3</version>
+              <version>1.5.0</version>
               <scope>provided</scope>
           </dependency>
       </dependencies>
@@ -68,7 +68,7 @@ redirect_from: /docs/index.html
               setPluginVersion("1.0.0");
               /**
                * you can induce to use the latest version of the plugin to your users via
-               * setPluginUpdateCheckURI(URI.create("http://your-server.name"), URI.create("http://location-of-archives"));
+               * setPluginUpdateCheckURI(URI.create("http://your-server.name"));
                */
       
               setPluginAuthor("John Doe");

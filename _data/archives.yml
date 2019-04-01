@@ -1,3 +1,31 @@
+- version: 1.5.0
+  date: 01 Apr 2019
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.5.0-windows-x64.zip
+  - Actlist-1.5.0-windows-x64.exe
+  - Actlist-1.5.0-windows-x86.zip
+  - Actlist-1.5.0-windows-x86.exe
+  - Actlist-1.5.0-macosx-x64.dmg
+  changes:
+  - new features
+    <ul>
+      <li>supports automatic plugin updates</li>
+      <li>`Check for updates` context menu</li>
+      <li>`Delete` context menu</li>
+    </ul>
+  - improvements
+    <ul>
+      <li>multiple jar DnD experience</li>
+      <li>native drag experience on Mac theme</li>
+    </ul>
+  - breaking changes
+    <ul>
+      <li>pluginArchivesURI will respect server's update check response</li>
+    </ul>
+
 - version: 1.4.3
   date: 28 Jan 2019
   supports:
