@@ -35,6 +35,5 @@ permalink: /docs/export-and-launch/
   ```
 
 * `project-name-verion.jar` file will be created under the `/target/` directory
-  
-* Finally, put the jar file into `/plugins/` directory that under the Actlist installed path and (re)start to Actlist.
-  or just drag and drop the jar file onto Actlist's main screen.
+
+* Finally, launch the Actlist and drag and drop the plugin.jar file onto the Actlist.
