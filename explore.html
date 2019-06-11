@@ -33,8 +33,8 @@ permalink: /explore/
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if plugin.download and plugin.license_text %}
-                <div class="visible-xs"><h5><a href="{{ plugin.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ plugin.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
             </div>
         </div>
