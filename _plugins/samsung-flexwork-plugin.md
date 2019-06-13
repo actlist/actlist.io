@@ -6,7 +6,7 @@ author: silentsoft
 lock: true
 homepage: 
 download: http://devplus.sdsdev.co.kr/dev/ssologin?url=http://devplus.sdsdev.co.kr/qna/t/topic/3438
-version: 3.9.5
+version: 3.9.6
 actlist_require: 1.3.0
 license_text: Samsung SDS License
 license_link: 
