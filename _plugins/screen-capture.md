@@ -6,7 +6,7 @@ author: silentsoft
 homepage: https://github.com/silentsoft/actlist-plugin-screen-capture
 download: https://github.com/silentsoft/actlist-plugin-screen-capture/releases/download/v1.0.0/screen-capture-1.0.0.jar
 version: 1.0.0
-actlist_require: 1.2.10
+required_actlist: 1.2.10
 license_text: Apache License 2.0
 license_link: https://github.com/silentsoft/actlist-plugin-screen-capture/blob/master/LICENSE.txt
 tags: [screen, capture, clipboard]

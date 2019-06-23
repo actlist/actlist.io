@@ -6,7 +6,7 @@ author: silentsoft
 homepage: https://github.com/silentsoft/actlist-plugin-logon-background
 download: https://github.com/silentsoft/actlist-plugin-logon-background/releases/download/v1.0.1/logon-background-1.0.1.jar
 version: 1.0.1
-actlist_require: 1.2.6
+required_actlist: 1.2.6
 license_text: Apache License 2.0
 license_link: https://github.com/silentsoft/actlist-plugin-logon-background/blob/master/LICENSE.txt
 tags: [logon, background]

@@ -6,7 +6,7 @@ author: John Doe
 homepage: 
 download: 
 version: 
-actlist_require: 
+required_actlist: 
 license_text: MIT License
 license_link: 
 tags: [lorem, ipsum, dolor, sit, amet]
