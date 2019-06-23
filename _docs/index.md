@@ -39,7 +39,7 @@ redirect_from: /docs/index.html
           <dependency>
               <groupId>org.silentsoft</groupId>
               <artifactId>actlist-plugin</artifactId>
-              <version>1.5.0</version>
+              <version>1.5.1</version>
               <scope>provided</scope>
           </dependency>
       </dependencies>
