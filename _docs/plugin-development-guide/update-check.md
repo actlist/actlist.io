@@ -27,6 +27,7 @@ permalink: /docs/update-check/
     * please response these parameters as a single Map object to the Actlist's update check request.
       * `available` : `true` or `false`. this will notices to user that your plugin has available updates or not.
       * `jar` : latest jar file of your plugin for automatic updates.
+      * `requiredActlist` : minimum compatible version of the Actlist for automatic updates.
       * `url` : the plugin's archives url. this url will be browsed when automatic update fails.
       * `killSwitch` : `on` or `off`. this will makes the plugin to unavailable.
       * `endOfService` : `true` or `false`. this will notices to user that your plugin has reached end-of-service or not.
