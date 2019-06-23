@@ -1,3 +1,23 @@
+- version: 1.5.1
+  date: 23 Jun 2019
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.5.1-windows-x64.zip
+  - Actlist-1.5.1-windows-x64.exe
+  - Actlist-1.5.1-windows-x86.zip
+  - Actlist-1.5.1-windows-x86.exe
+  - Actlist-1.5.1-macosx-x64.dmg
+  changes:
+  - improvements
+    <ul>
+      <li>supports direct install from explore view</li>
+      <li>`debug(isDebugMode)` and `debug(proxy)` method has been added</li>
+      <li>supports `ActlistPlugin.isDebugMode()` method for public static access</li>
+      <li>supports `requiredActlist` parameter from plugin's update check response for restrict automatic updates</li>
+    </ul>
+
 - version: 1.5.0
   date: 01 Apr 2019
   supports:
