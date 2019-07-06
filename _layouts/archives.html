@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="container">{% for archive in site.data.archives %}
-    <div class="col-md-4 col-sm-4 col-xs-4" style="text-align: right;">
-        <h4>v{{archive.version}}</h4>
+    <div id="v{{archive.version}}" class="col-md-4 col-sm-4 col-xs-4" style="text-align: right;">
+        <h4><a class="h4" href="#v{{archive.version}}">v{{archive.version}}</a></h4>
         <h6>{{archive.date}}</h6>
         <p>{% for support in archive.supports %}{% if support == 'windows' %}
             <i class="fa fa-windows"></i>{% elsif support == 'macosx' %}
