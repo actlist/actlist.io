@@ -13,6 +13,8 @@ url: https://actlist.silentsoft.org
 git_address: https://github.com/silentsoft/actlist
 git_edit_address: https://github.com/silentsoft/actlist.silentsoft.org/blob/master
 
+download_api: /api/download?url=
+
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
 #bootwatch: paper
