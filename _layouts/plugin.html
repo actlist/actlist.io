@@ -16,19 +16,19 @@ layout: default
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if page.download and page.license_text %}
-                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download | prepend: site.baseurl }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download | prepend: site.baseurl }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: -5px;">
                 <div>
                     <span>{% if page.author %}<i class="fa fa-user"></i> {{ page.author }}{% endif %}</span>
-                    <span>{% if page.homepage %}<i class="fa fa-home" style="padding-left: 5px;"></i><a href="{{ page.homepage | prepend: site.baseurl }}"> Homepage</a>{% endif %}</span>
+                    <span>{% if page.homepage %}<i class="fa fa-home" style="padding-left: 5px;"></i><a href="{{ page.homepage }}"> Homepage</a>{% endif %}</span>
                     <span>
                         {% if page.license_text %}
                         <i class="fa fa-balance-scale" style="padding-left: 5px;"></i>
                             {% if page.license_link %}
-                            <a href="{{ page.license_link | prepend: site.baseurl }}"> {{ page.license_text }}</a>
+                            <a href="{{ page.license_link }}"> {{ page.license_text }}</a>
                             {% else %}
                             {{ page.license_text }}
                             {% endif %}
