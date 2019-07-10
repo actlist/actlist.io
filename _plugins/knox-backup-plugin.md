@@ -5,7 +5,7 @@ date: 2019-05-22
 author: silentsoft
 lock: true
 homepage: 
-download: http://devplus.sdsdev.co.kr/dev/ssologin?url=http://devplus.sdsdev.co.kr/qna/t/topic/7632
+download: http://actlist.silentsoft.org/api/download/plugin/e9c11461.jar
 version: 1.0.0
 required_actlist: 1.2.10
 license_text: Samsung SDS License
