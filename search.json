@@ -15,7 +15,7 @@
 {%- if site.plugins.size > 0 -%},{%- endif -%}
 {% for plugin in site.plugins %}
     {
-        "title": "{{ plugin.title | escape }}",
+        "title": "{{ plugin.title }}",
         "url": "{{ plugin.url | prepend: site.baseurl }}"{%- if plugin.tags.size > 0 -%},
         "tags": "{{ plugin.tags | join: " " | replace: "_", " " }}"{% endif %}
     }{%- unless forloop.last -%},{%- endunless -%}
