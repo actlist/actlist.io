@@ -11,7 +11,7 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/silentsoft/actlist.silentsoft.org
+git clone https://github.com/silentsoft/actlist.silentsoft.org.git
 cd actlist.silentsoft.org
 
 # run jekyll with dependencies
