@@ -9,7 +9,10 @@ layout: default
         </div>
 
         <div class="col-md-8">
-            <h3>{{ page.title }}</h3>
+            <div style="padding-bottom: 10px;">
+                <span class="h3">{{ page.title }}</span>
+                {% if page.date %}<span style="float: right; padding-top: 15px;">Published : {{ page.date | date_to_string }}</span>{% endif %}
+            </div>
             <div id="markdown-content-container">{{ content }}</div>
             <p class="text-center">
               <br />
