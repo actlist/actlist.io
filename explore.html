@@ -16,8 +16,8 @@ permalink: /explore/
                 </h5>
                 <p>
                     {% if plugin.excerpt %}
-                    {% if plugin.excerpt.size >= 200 %}
-                    <span>{{ plugin.excerpt | slice: 0,200 }}</span><a href="{{ plugin.url | prepend: site.baseurl }}"> ...more</a>
+                    {% if plugin.excerpt.size >= 225 %}
+                    <span>{{ plugin.excerpt | slice: 0,225 }}</span><a href="{{ plugin.url | prepend: site.baseurl }}"> ...more</a>
                     {% else %}
                     <span>{{ plugin.excerpt }}</span>
                     {% endif %}
