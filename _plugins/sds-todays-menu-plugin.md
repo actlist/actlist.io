@@ -10,6 +10,7 @@ version: 1.0.0
 required_actlist: 1.2.6
 license_text: Samsung SDS License
 license_link: 
+statistics_uuid: 4c4c9be3-e2f9-3709-8da1-8c694bb6010e
 tags: [samsung, sds, welstory, foodcourt, todays, menu]
 ---
 

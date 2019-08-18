@@ -9,6 +9,7 @@ version: 1.0.1
 required_actlist: 1.2.6
 license_text: Apache License 2.0
 license_link: https://github.com/silentsoft/actlist-logon-background-plugin/blob/master/LICENSE.txt
+statistics_uuid: 47878d31-4389-3eb6-ac76-ba98bdefeb09
 tags: [logon, background]
 ---
 

@@ -10,6 +10,7 @@ version: 1.0.0
 required_actlist: 1.2.10
 license_text: Samsung SDS License
 license_link: 
+statistics_uuid: e9c11461-9bf5-3455-9360-c0e87da13114
 tags: [knox, backup]
 ---
 
