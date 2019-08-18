@@ -10,6 +10,7 @@ version: 3.9.8
 required_actlist: 1.3.0
 license_text: Samsung SDS License
 license_link: 
+statistics_uuid: 777133a6-de2e-4bb1-850c-da24c81981f3
 tags: [samsung, sds, flexwork]
 ---
 

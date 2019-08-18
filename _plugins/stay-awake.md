@@ -9,6 +9,7 @@ version: 1.0.1
 required_actlist: 1.2.6
 license_text: Apache License 2.0
 license_link: https://github.com/silentsoft/actlist-stay-awake-plugin/blob/master/LICENSE.txt
+statistics_uuid: 0ebbebce-ed1f-3dde-9582-6292cc208818
 tags: [stay, awake, no_screen_saver, caffeine]
 ---
 

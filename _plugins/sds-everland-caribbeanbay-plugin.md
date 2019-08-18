@@ -10,6 +10,7 @@ version: 1.0.0
 required_actlist: 1.2.6
 license_text: Samsung SDS License
 license_link: 
+statistics_uuid: 3443578e-c5b4-3d93-9620-0af9e7250299
 tags: [samsung, sds, everland, caribbean]
 ---
 

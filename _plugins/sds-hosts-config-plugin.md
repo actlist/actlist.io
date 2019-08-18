@@ -10,6 +10,7 @@ version: 1.0.0
 required_actlist: 1.2.6
 license_text: Samsung SDS License
 license_link: 
+statistics_uuid: 24093f98-91dc-3614-a7d5-accb603432ee
 tags: [samsung, sds, hosts, bat, file, auto, config]
 ---
 

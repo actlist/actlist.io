@@ -9,6 +9,7 @@ version: 1.0.0
 required_actlist: 1.2.10
 license_text: Apache License 2.0
 license_link: https://github.com/silentsoft/actlist-screen-capture-plugin/blob/master/LICENSE.txt
+statistics_uuid: 5d58a0f6-1c1f-34a4-a1e3-cc684673d1d0
 tags: [screen, capture, clipboard]
 ---
 
