@@ -1,5 +1,6 @@
 ---
 title: About dialog
+date: 2019-04-02
 permalink: /docs/about-dialog/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Minimum compatible version
+date: 2018-06-23
 permalink: /docs/minimum-compatible-version/
 ---
 

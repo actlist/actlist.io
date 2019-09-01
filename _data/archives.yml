@@ -1,3 +1,46 @@
+- version: 1.6.0
+  date: 02 Sep 2019
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-1.6.0-windows-x64.zip
+  - Actlist-1.6.0-windows-x86.zip
+  - Actlist-1.6.0-macosx-x64.dmg
+  changes:
+  - new features
+    <ul>
+      <li>supports dark mode UI</li>
+      <li>supports statistics through `setPluginStatisticsUUID()`</li>
+      <li>supports `Clear` context menu on console view</li>
+    </ul>
+  - bugfix
+    <ul>
+      <li>launch fails with non-ISO-8859-1 path on Windows</li>
+      <li>file encoding as a UTF-8 on Windows</li>
+      <li>detect wrong filename from download url</li>
+      <li>certain jar DnD with NPE</li>
+      <li>transparent background bug through `showLoadingBar()`</li>
+    </ul>
+  - changes
+    <ul>
+      <li>`debug(...)` method parameter as a builder pattern</li>
+      <li>some of the `debug(...)` method has been deprecated</li>
+      <li>minor UI changes</li>
+    </ul>
+  - breaking changes (access modifier)
+    <ul>
+      <li>`setSupportedPlatforms()`</li>
+      <li>`setOneTimePlugin()`</li>
+      <li>`setPluginArchivesURI()`</li>
+      <li>`setBeforeRequest()`</li>
+      <li>`setPluginUpdateCheckURI()`</li>
+    </ul>
+  - dependency
+    <ul>
+      <li>update JFoenix dependency to 8.0.8 from 1.0.0</li>
+    </ul>
+
 - version: 1.5.2
   date: 07 Jul 2019
   supports:

@@ -1,5 +1,6 @@
 ---
 title: Graphic design
+date: 2018-06-23
 permalink: /docs/graphic-design/
 ---
 

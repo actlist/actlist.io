@@ -1,5 +1,6 @@
 ---
 title: Plugin name
+date: 2018-06-23
 permalink: /docs/plugin-name/
 ---
 

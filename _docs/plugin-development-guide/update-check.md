@@ -1,5 +1,6 @@
 ---
 title: Update check
+date: 2019-06-23
 permalink: /docs/update-check/
 ---
 
