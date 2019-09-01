@@ -1,5 +1,6 @@
 ---
 title: Config file
+date: 2018-06-23
 permalink: /docs/config-file/
 ---
 

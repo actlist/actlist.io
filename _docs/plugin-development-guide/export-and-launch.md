@@ -1,5 +1,6 @@
 ---
 title: Export and launch
+date: 2019-09-02
 permalink: /docs/export-and-launch/
 ---
 
@@ -23,7 +24,7 @@ permalink: /docs/export-and-launch/
       <dependency>
           <groupId>org.silentsoft</groupId>
           <artifactId>actlist-plugin</artifactId>
-          <version>1.5.2</version>
+          <version>1.6.0</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>

@@ -1,5 +1,6 @@
 ---
 title: One time plugin
+date: 2018-09-26
 permalink: /docs/one-time-plugin/
 ---
 

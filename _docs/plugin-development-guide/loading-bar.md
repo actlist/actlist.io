@@ -1,5 +1,6 @@
 ---
 title: Loading bar
+date: 2018-06-23
 permalink: /docs/loading-bar/
 ---
 

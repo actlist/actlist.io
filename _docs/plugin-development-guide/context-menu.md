@@ -1,5 +1,6 @@
 ---
 title: Context menu
+date: 2018-06-23
 permalink: /docs/context-menu/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Message box
+date: 2018-06-23
 permalink: /docs/message-box/
 ---
 
