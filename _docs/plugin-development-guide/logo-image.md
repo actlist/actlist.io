@@ -4,4 +4,4 @@ date: 2018-06-23
 permalink: /docs/logo-image/
 ---
 
-* Just place `Plugin.png` to same location of `Plugin.java`
+* Just place the `Plugin.png` file to under the `src/main/resources/`. the image will be displayed in about dialog.

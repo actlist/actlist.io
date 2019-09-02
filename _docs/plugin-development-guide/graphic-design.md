@@ -4,4 +4,4 @@ date: 2018-06-23
 permalink: /docs/graphic-design/
 ---
 
-* The Actlist is based on `JavaFx`. you can easily generate graphic plugin with `JavaFx` via `SceneBuilder`. Just create simple `Plugin.fxml` file and place `Plugin.fxml` to same location of `Plugin.java`
+* The Actlist application is based on `JavaFx`. you can easily generate graphic plugin with the `SceneBuilder`. Just create a simple `Plugin.fxml` file and place it to under the `src/main/resources/`.
