@@ -2,16 +2,18 @@
   docs:
   - quick-start
   - plugin-name
+  - graphic-design
   - warning-text
-  - update-check
-  - minimum-compatible-version
   - about-dialog
   - logo-image
   - context-menu
-  - graphic-design
   - loading-bar
   - message-box
   - config-file
   - one-time-plugin
   - exception
+  - minimum-compatible-version
+  - dark-mode
+  - proxy-host
+  - update-check
   - export-and-launch
