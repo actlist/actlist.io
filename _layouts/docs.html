@@ -11,7 +11,13 @@ layout: default
         <div class="col-md-8">
             <div style="padding-bottom: 10px;">
                 <span class="h3">{{ page.title }}</span>
-                {% if page.date %}<span style="float: right; padding-top: 15px;">Published : {{ page.date | date_to_string }}</span>{% endif %}
+                {% if page.date %}
+                <span style="float: right; padding-top: 15px;">Published : {{ page.date | date_to_string }}
+                    <a target="_blank" href="{{site.git_history_address}}/{{ page.path }}" class="btn-default">
+                        <i class="fa fa-history"></i>
+                    </a>
+                </span>
+                {% endif %}
             </div>
             <div id="markdown-content-container">{{ content }}</div>
             <p class="text-center">
