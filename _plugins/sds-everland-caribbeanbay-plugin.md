@@ -14,4 +14,4 @@ statistics_uuid: 3443578e-c5b4-3d93-9620-0af9e7250299
 tags: [samsung, sds, everland, caribbean]
 ---
 
-SDS 임직원을 위한 에버랜드, 캐리비안베이 티켓 조회 플러그인. (자세한 내용은 [DEV+](http://devplus.sdsdev.co.kr/dev/ssologin?url=http://devplus.sdsdev.co.kr/qna/t/topic/7958){:target="_blank"}에서 to be continued)
+SDS 임직원을 위한 에버랜드, 캐리비안베이 티켓 조회 플러그인. (자세한 내용은 [DEV+](http://devplus.sdsdev.co.kr:9084/dev/ssologin?url=http://devplus.sdsdev.co.kr:9084/qna/t/topic/7958){:target="_blank"}에서 to be continued)

@@ -14,4 +14,4 @@ statistics_uuid: 777133a6-de2e-4bb1-850c-da24c81981f3
 tags: [samsung, sds, flexwork]
 ---
 
-자율출퇴근제 플러그인. (자세한 내용은 [DEV+](http://devplus.sdsdev.co.kr/dev/ssologin?url=http://devplus.sdsdev.co.kr/qna/t/topic/3438){:target="_blank"}에서 to be continued)
+자율출퇴근제 플러그인. (자세한 내용은 [DEV+](http://devplus.sdsdev.co.kr:9084/dev/ssologin?url=http://devplus.sdsdev.co.kr:9084/qna/t/topic/3438){:target="_blank"}에서 to be continued)
