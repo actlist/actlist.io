@@ -1,13 +1,15 @@
 ---
 title: Quick start
-date: 2019-09-02
+date: 2020-01-18
 permalink: /docs/quick-start/
 redirect_from: /docs/index.html
 ---
 
-#### Language Requirements
+#### Requirements
 
-* Java 1.8 (with JavaFx)
+* Oracle JDK 1.8 or Open JDK with JavaFx binary distribution
+* Maven
+* (Optional) JavaFx Scene Builder for graphic design
 
 #### Development setup
 
