@@ -1,6 +1,6 @@
 ---
 title: Quick start
-date: 2020-01-18
+date: 2020-01-27
 permalink: /docs/quick-start/
 redirect_from: /docs/index.html
 ---
@@ -8,7 +8,6 @@ redirect_from: /docs/index.html
 #### Requirements
 
 * Oracle JDK 1.8 or Open JDK with JavaFx binary distribution
-* Maven
 * (Optional) JavaFx Scene Builder for graphic design
 
 #### Development setup
@@ -16,10 +15,15 @@ redirect_from: /docs/index.html
 * There are two ways to create an Actlist plugin. the first one is using starter-kit(which is highly recommended) and second one is creating java project manually.
 
   ##### 1. using starter-kit
-    ```
-    $ git clone https://github.com/silentsoft/actlist-plugin-starter-kit.git
-    ```
-  ---
+    1. [Download starter kit](https://github.com/silentsoft/actlist-plugin-starter-kit/archive/master.zip)
+    2. Rename `master.zip` to the desired name and unzip it
+    3. Enter the directory
+    4. Initialize your project metadata
+       ```
+       $ ./mvnw initialize -DgroupId=com.example -DartifactId=awesome-demo
+       ```
+    5. Import project into your favorite IDE
+
   ##### 2. or creating java project manually
     * Create a new Java project and configure to Maven project.
     * Add `property`, `repository`, `parent` and `dependency` information to `pom.xml`
