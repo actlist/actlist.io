@@ -1,6 +1,6 @@
 ---
 title: Quick start
-date: 2020-01-27
+date: 2020-02-02
 permalink: /docs/quick-start/
 redirect_from: /docs/index.html
 ---
@@ -62,7 +62,7 @@ redirect_from: /docs/index.html
           <dependency>
               <groupId>org.silentsoft</groupId>
               <artifactId>actlist-plugin</artifactId>
-              <version>1.6.0</version>
+              <version>1.7.0</version>
               <scope>provided</scope>
           </dependency>
       </dependencies>
