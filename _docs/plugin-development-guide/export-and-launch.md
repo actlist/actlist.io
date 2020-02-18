@@ -24,7 +24,7 @@ permalink: /docs/export-and-launch/
       <dependency>
           <groupId>org.silentsoft</groupId>
           <artifactId>actlist-plugin</artifactId>
-          <version>1.7.0</version>
+          <version>1.7.1</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>
