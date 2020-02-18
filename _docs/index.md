@@ -1,6 +1,6 @@
 ---
 title: Quick start
-date: 2020-02-02
+date: 2020-02-19
 permalink: /docs/quick-start/
 redirect_from: /docs/index.html
 ---

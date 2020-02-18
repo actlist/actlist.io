@@ -1,6 +1,6 @@
 ---
 title: Export and launch
-date: 2019-02-02
+date: 2019-02-19
 permalink: /docs/export-and-launch/
 ---
 
