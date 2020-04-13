@@ -14,4 +14,4 @@ statistics_uuid: e9c11461-9bf5-3455-9360-c0e87da13114
 tags: [knox, backup]
 ---
 
-KNOX 메일&결재 백업 플러그인. (자세한 내용은 [DEV+](http://devplus.sdsdev.co.kr:9084/dev/ssologin?url=http://devplus.sdsdev.co.kr:9084/qna/t/topic/7632){:target="_blank"}에서 to be continued)
+KNOX 메일&결재 백업 플러그인. (자세한 내용은 [DOgether](http://opsplus.sdsdev.co.kr:9083/#/login?postingId=7164){:target="_blank"}에서 to be continued)
