@@ -4,30 +4,16 @@ date: 2019-02-19
 permalink: /docs/export-and-launch/
 ---
 
-* Make sure you have a below `property`, `repository`, `parent` and `dependency` in your `pom.xml`
+* Make sure you have a below `parent` and `property` in your `pom.xml`
   ```
-  <properties>
-      <mainClass>your.pkg.Plugin</mainClass>
-  </properties>
-  <repositories>
-      <repository>
-          <id>silentsoft-repository</id>
-          <url>http://nexus.silentsoft.org/repository/maven-public</url>
-      </repository>
-  </repositories>
   <parent>
       <groupId>org.silentsoft</groupId>
       <artifactId>actlist-plugin-sdk</artifactId>
-      <version>2.0.0</version>
+      <version>2.0.1</version>
   </parent>
-  <dependencies>
-      <dependency>
-          <groupId>org.silentsoft</groupId>
-          <artifactId>actlist-plugin</artifactId>
-          <version>1.7.1</version>
-          <scope>provided</scope>
-      </dependency>
-  </dependencies>
+  <properties>
+      <mainClass>your.pkg.Plugin</mainClass>
+  </properties>
   ```
 
 * Run maven command via CLI or GUI with `clean package` goals
