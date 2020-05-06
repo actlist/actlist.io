@@ -7,7 +7,7 @@ lock: true
 homepage: 
 download: http://actlist.silentsoft.org/api/download/plugin/777133a6-de2e-4bb1-850c-da24c81981f3.jar
 version: 3.12.0
-required_actlist: 1.3.0
+required_actlist: 2.0.1
 license_text: Samsung SDS License
 license_link: 
 statistics_uuid: 777133a6-de2e-4bb1-850c-da24c81981f3
