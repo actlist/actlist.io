@@ -15,3 +15,6 @@ tags: [samsung, sds, flexwork]
 ---
 
 자율출퇴근제 플러그인. (자세한 내용은 [DOgether](http://opsplus.sdsdev.co.kr:9083/#/login?postingId=4185){:target="_blank"}에서 to be continued)
+
+###### **`Breaking Changes`**
+- 플러그인 v3.12.0 버전부터 Actlist v2.0.1 버전을 요구합니다.
