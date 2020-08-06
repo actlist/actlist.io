@@ -17,11 +17,11 @@ layout: default
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if page.download and page.license_text %}
                 {% if page.statistics_uuid %}
-                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download | prepend: site.download_statistics_api | replace: '$uuid', page.statistics_uuid }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download | prepend: site.download_statistics_api | replace: '$uuid', page.statistics_uuid }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download | prepend: site.download_statistics_api | replace: '$uuid', page.statistics_uuid }}" data-required-actlist="{{ page.required_actlist }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download | prepend: site.download_statistics_api | replace: '$uuid', page.statistics_uuid }}" role="button" data-required-actlist="{{ page.required_actlist }}"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% else %}
-                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download | prepend: site.download_api }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download | prepend: site.download_api }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ page.download | prepend: site.download_api }}" data-required-actlist="{{ page.required_actlist }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ page.download | prepend: site.download_api }}" role="button" data-required-actlist="{{ page.required_actlist }}"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
                 {% endif %}
             </div>

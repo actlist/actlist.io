@@ -39,11 +39,11 @@ sectionid: plugins
             <div class="col-md-2 col-sm-2 col-xs-2">
                 {% if plugin.download and plugin.license_text %}
                 {% if plugin.statistics_uuid %}
-                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ plugin.download | prepend: site.download_statistics_api | replace: '$uuid', plugin.statistics_uuid }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.download_statistics_api | replace: '$uuid', plugin.statistics_uuid }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ plugin.download | prepend: site.download_statistics_api | replace: '$uuid', plugin.statistics_uuid }}" data-required-actlist="{{ plugin.required_actlist }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.download_statistics_api | replace: '$uuid', plugin.statistics_uuid }}" role="button" data-required-actlist="{{ plugin.required_actlist }}"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% else %}
-                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ plugin.download | prepend: site.download_api }}"><i class="fa fa-download"></i></a></h5></div>
-                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.download_api }}" role="button"><i class="fa fa-download"></i> Download</a></h5></div>
+                <div class="visible-xs"><h5><a class="actlist-plugin-download" href="{{ plugin.download | prepend: site.download_api }}" data-required-actlist="{{ plugin.required_actlist }}"><i class="fa fa-download"></i></a></h5></div>
+                <div class="hidden-xs"><h5><a class="actlist-plugin-download btn btn-primary btn-sm" href="{{ plugin.download | prepend: site.download_api }}" role="button" data-required-actlist="{{ plugin.required_actlist }}"><i class="fa fa-download"></i> Download</a></h5></div>
                 {% endif %}
                 {% endif %}
             </div>
