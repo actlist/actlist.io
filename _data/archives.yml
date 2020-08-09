@@ -1,3 +1,31 @@
+- version: 2.1.0
+  date: 10 Aug 2020
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-2.1.0-windows-x64.zip
+  - Actlist-2.1.0-windows-x86.zip
+  - Actlist-2.1.0-macosx-x64.dmg
+  changes:
+  - new features
+    <ul>
+      <li>supports height adjustment for graphic plugin</li>
+    </ul>
+  - improvements
+    <ul>
+      <li>logging experience</li>
+      <li>fix lazy reaction when clicks download button on explore view</li>
+      <li>plugin jar class loading mechanism</li>
+      <li>add markdown css to content area on ​the Plugin's About dialog</li>
+      <li>add minor inspection before downloading the plugin in the explore view</li>
+    </ul>
+  - dependency
+    <ul>
+      <li>remove log4j 1.7.5</li>
+      <li>add logback 1.2.3</li>
+    </ul>
+
 - version: 2.0.1
   date: 19 Apr 2020
   supports:

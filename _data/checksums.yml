@@ -351,3 +351,18 @@ Actlist-2.0.1-windows-x64.exe:
 
 Actlist-2.0.1-windows-x64.zip:
   sha256: e0282e46ca62d167a9c1e0500ba38f695e9f001be468f52b3ec118c574e052c0
+
+Actlist-2.1.0-macosx-x64.dmg:
+  sha256: 26cdebb5c545c899573768883ffe79f87cb7b717683d781ce8fa6c4630e10cfb
+
+Actlist-2.1.0-windows-x86.exe:
+  sha256: d36b7700884d385a1d332663f187d0aaac53bb130f0c7247e8b5209f71ef7f81
+
+Actlist-2.1.0-windows-x86.zip:
+  sha256: fc8546bb56f352ca23b9b4e74f49a3abf908a9037ae59467232c77cd43fc3806
+
+Actlist-2.1.0-windows-x64.exe:
+  sha256: 15ab8c052614e3f650d3ab288f1a0b5920927f0fd7131e86c092fe86f6d4357a
+
+Actlist-2.1.0-windows-x64.zip:
+  sha256: a6519207d53bc3cf3a3624f06aa5e0bc9a1f911c60118ab2c6211e058676fa5e
