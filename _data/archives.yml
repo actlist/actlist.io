@@ -1,3 +1,18 @@
+- version: 2.2.0
+  date: 17 Aug 2020
+  supports:
+  - windows
+  - macosx
+  files:
+  - Actlist-2.2.0-windows-x64.zip
+  - Actlist-2.2.0-windows-x86.zip
+  - Actlist-2.2.0-macosx-x64.dmg
+  changes:
+  - bugfix
+    <ul>
+      <li>rollback&colon; plugin jar class loading mechanism</li>
+    </ul>
+
 - version: 2.1.0
   date: 10 Aug 2020
   supports:
