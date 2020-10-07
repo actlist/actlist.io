@@ -8,11 +8,10 @@ logo: /img/og-img-1200x630.png
 #also head.html has too.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://actlist.silentsoft.org
-#url: http://actlist.silentsoft.org # the base hostname & protocol for your site
-git_address: https://github.com/silentsoft/actlist
-git_edit_address: https://github.com/silentsoft/actlist.silentsoft.org/blob/master
-git_history_address: https://github.com/silentsoft/actlist.silentsoft.org/commits/master
+url: https://actlist.io
+git_address: https://github.com/actlist
+git_edit_address: https://github.com/actlist/actlist.io/blob/master
+git_history_address: https://github.com/actlist/actlist.io/commits/master
 
 download_api: /api/download?url=
 download_statistics_api: /api/download?uuid=$uuid&url=

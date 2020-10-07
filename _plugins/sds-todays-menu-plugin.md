@@ -5,7 +5,7 @@ date: 2019-07-11
 author: silentsoft
 lock: true
 homepage: 
-download: http://actlist.silentsoft.org/api/download/plugin/4c4c9be3.jar
+download: http://actlist.io/api/download/plugin/4c4c9be3.jar
 version: 1.0.0
 required_actlist: 1.2.6
 license_text: Samsung SDS License

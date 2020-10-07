@@ -1,6 +1,6 @@
 # actlist.silentsoft.org
 
-[This website](https://actlist.silentsoft.org) has been created with Jekyll and [jekyll-doc-theme](https://aksakalli.github.io/jekyll-doc-theme/)
+[This website](https://actlist.io) has been created with Jekyll and [jekyll-doc-theme](https://aksakalli.github.io/jekyll-doc-theme/)
 
 ## Running locally
 
@@ -11,8 +11,8 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/silentsoft/actlist.silentsoft.org.git
-cd actlist.silentsoft.org
+git clone https://github.com/actlist/actlist.io.git
+cd actlist.io
 
 # run jekyll with dependencies
 bundle exec jekyll serve
