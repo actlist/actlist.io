@@ -15,7 +15,7 @@ redirect_from: /docs/index.html
 * There are two ways to create an Actlist plugin. the first one is using starter-kit(which is highly recommended) and second one is creating java project manually.
 
   ##### 1. using starter-kit
-    1. [Download starter kit](https://github.com/silentsoft/actlist-plugin-starter-kit/archive/master.zip)
+    1. [Download starter kit](https://github.com/actlist/actlist-plugin-starter-kit/archive/master.zip)
     2. Rename `master.zip` to the desired name and unzip it
     3. Enter the directory
     4. Initialize your project metadata
