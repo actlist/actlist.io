@@ -1,4 +1,4 @@
-# actlist.silentsoft.org
+# actlist.io
 
 [This website](https://actlist.io) has been created with Jekyll and [jekyll-doc-theme](https://aksakalli.github.io/jekyll-doc-theme/)
 
