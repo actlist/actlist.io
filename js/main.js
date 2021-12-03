@@ -45,12 +45,6 @@ $(function() {
     $('#markdown-content-container img').addClass('img-responsive');
 
 
-    if ($('#div-shields').length > 0) {
-        $.get('/api/shields', function( data ) {
-            $('#div-shields').html( data );
-        });
-    }
-
     $('#checksumModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);
         var name = button.data('name');
